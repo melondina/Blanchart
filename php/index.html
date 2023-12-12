@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+
+    <title>Отправка формы на почту </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <style>
+    	form {
+    		background-color: #f9f9f9;
+    		padding: 20px;
+    		margin: 20px;
+    	}
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <div class="row">
+      	<div class="col-sm-4">
+      		<form class="js-form" action="mail.php" method="POST">
+      			<legend>Заголовок формы</legend>
+
+      			<div class="form-group">
+      				<label for="">Введите ваше имя</label>
+      				<input type="text" class="form-control" name="user_name" placeholder="Например, Иван" data-validate-field="name">
+      			</div>
+      		
+      			<div class="form-group">
+      				<label for="">Введите номер телефона</label>
+      				<input type="tel" class="form-control" name="user_phone" placeholder="+7 (999) 99 99 999" data-validate-field="tel">
+      			</div>
+      		
+      			<button type="submit" class="btn btn-primary">Отправить форму</button>
+      		</form>
+      	</div>
+      </div>
+
+    </div>
+
+    <script src="inputmask.min.js"></script>
+    <script src="just-validate.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+	
